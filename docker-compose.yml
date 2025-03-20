@@ -6,8 +6,8 @@ services:
       dockerfile: Dockerfile
     ports:
       - "8000:8000"
-    volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
+    #volumes:
+      #- /var/run/docker.sock:/var/run/docker.sock
     environment:
       - MONGODB_URI=mongodb://192.168.1.42:27017/comet-scan-demo
     privileged: true  # Needed for Docker-in-Docker

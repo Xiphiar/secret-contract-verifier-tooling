@@ -9,19 +9,19 @@ build:
 
 # Start the services
 up:
-	docker-compose up -d
+	docker compose up -d
 
 # Rebuild and start the services
 up-build:
-	docker-compose up -d --build
+	docker compose up -d --build
 
 # Stop the services
 down:
-	docker-compose down
+	docker compose down
 
 # Stop the services and remove volumes
 down-v:
-	docker-compose down -v
+	docker compose down -v
 
 # Remove built images
 clean:
@@ -29,11 +29,11 @@ clean:
 
 # Show logs
 logs:
-	docker-compose logs -f
+	docker compose logs -f
 
 # Enter the container shell
 shell:
-	docker-compose exec contract-verifier bash
+	docker compose exec contract-verifier bash
 
 # Help information
 help:
